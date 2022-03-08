@@ -15,10 +15,6 @@ input, textarea {
 .section_about-us p {
     width: 90%;
 }
-.section_about-us img {
-    border-radius: 10px;
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.316);
-}
 #nav-link_contato {
     background-color: #754FFE;
     border-radius: 20px;
@@ -28,6 +24,16 @@ input, textarea {
 #nav-link_contato:hover {
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
+}
+/* Carousel */
+#carousel {
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.316);
+}
+#carousel img {
+    border-radius: 10px;
+    height: 320px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.316);
+    width: 100%;
 }
 /* seção - produtos */
 .section_products .products {
