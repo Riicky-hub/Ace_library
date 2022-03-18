@@ -46,15 +46,6 @@ function tarefaIMG() {
         }))
         .pipe(gulp.dest('./dist/img'))
 }
-gulp.task('serve', function(){
-    browserSync.init({
-        server: {
-            baseDir: "./dist"
-        }
-    })
-    gulp.watch('./src/**/*').on('change', process);
-    gulp.watch('./src/**/*').on('change', reload);
-})
 /* Comandos */
 exports.default = process;
 exports.process = series(tarefaCSS, tarefaHTML, tarefaJS);
@@ -62,3 +53,12 @@ exports.htmls = tarefaHTML;
 exports.styles = tarefaCSS;
 exports.scripts = tarefaJS;
 exports.images = tarefaIMG;
+/* Inicializar Projeto */
+// command: gulp serve
+gulp.task('serve', function(){
+    browserSync.init({
+        server: {
+            baseDir: "./src"
+        }
+    })
+})
