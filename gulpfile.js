@@ -8,6 +8,7 @@ const jsmin = require('gulp-uglify');
 const image = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const cssmin = require('gulp-cssmin');
+const sass = require('gulp-sass')(require('node-sass'));
 const rename = require('gulp-rename');
 
 /* Funções */
@@ -17,12 +18,17 @@ function tarefaHTML() {
         .pipe(gulp.dest('./dist'))
 }
 function tarefaCSS(callback) {
-    gulp.src('./src/css/*.css')
-        .pipe(concat('styles.css'))
+    gulp.src('./vendor/bootstrap/css/bootstrap.css')
+        .pipe(concat('libs.css'))
         .pipe(cssmin())
-        .pipe(rename({suffix: 'min'}))
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css'))
     return callback();
+}
+function tarefaSASS() {
+    return gulp.src('./src/scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./dist/css'))
 }
 function tarefaJS() {
     return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.js')
@@ -47,18 +53,10 @@ function tarefaIMG() {
         .pipe(gulp.dest('./dist/img'))
 }
 /* Comandos */
+exports.process = parallel(tarefaCSS, tarefaHTML, tarefaJS, tarefaSASS);
 exports.default = process;
-exports.process = series(tarefaCSS, tarefaHTML, tarefaJS);
 exports.htmls = tarefaHTML;
 exports.styles = tarefaCSS;
 exports.scripts = tarefaJS;
 exports.images = tarefaIMG;
-/* Inicializar Projeto */
-// command: gulp serve
-gulp.task('serve', function(){
-    browserSync.init({
-        server: {
-            baseDir: "./src"
-        }
-    })
-})
+exports.sass = tarefaSASS;

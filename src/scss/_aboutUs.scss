@@ -1,0 +1,20 @@
+.section_about-us {
+    background-color: $color-01;
+    color: $color-02;
+    padding: 10px 0;
+    border-bottom: $border;
+    border-top: $border;
+}
+.section_about-us p {
+    width: 90%;
+}
+#nav-link_contato {
+    background-color: $color-01;
+    border-radius: 20px;
+    color: $color-02;
+    transition: all 0.5s ease-in-out;
+}
+#nav-link_contato:hover {
+    color: white;
+    box-shadow: $box-shadow;
+}

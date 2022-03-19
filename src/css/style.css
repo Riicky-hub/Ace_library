@@ -1,69 +1,81 @@
 header {
-    padding: 5px 0;
+  padding: 5px 0;
 }
+
 input, textarea {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-/* seção - sobre nós */
-.section_about-us {
-    background-color: #754FFE;
-    color: #f5f5f5;
-    padding: 10px 0;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
-}
-.section_about-us p {
-    width: 90%;
-}
-#nav-link_contato {
-    background-color: #754FFE;
-    border-radius: 20px;
-    color: #f5f5f5;
-    transition: all 0.5s ease-in-out;
-}
-#nav-link_contato:hover {
-    color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
-}
-/* Carousel */
-#carousel {
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.316);
-}
-#carousel img {
-    border-radius: 10px;
-    height: 320px;
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.316);
-    width: 100%;
-}
-/* seção - produtos */
+
 .section_products .products {
-    padding-top: 40px;
+  padding-top: 40px;
 }
+
 .products h2 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
+
 .products .card img {
-    height: 340px;
+  height: 340px;
 }
+
 .products .card-body .card-title {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
+
 .products .card-body .card-text {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-/* seção - form */
+
 .section_products form {
-    padding: 60px 0 60px 0;
+  padding: 60px 0 60px 0;
 }
-/* rodapé */
+
 footer {
-    padding: 17px;
-    background-color: #754FFE;
-    color: #f5f5f5;
-    text-align: center;
-    border-top: 3px solid black;
+  padding: 17px;
+  background-color: #754FFE;
+  color: #f5f5f5;
+  text-align: center;
+  border-top: 2px 2px 5px rgba(0, 0, 0, 0.624);
 }
+
 footer h5 {
-    margin: 0;
+  margin: 0;
 }
+
+#carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
+}
+
+#carousel img {
+  border-radius: 10px;
+  height: 320px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
+  width: 100%;
+}
+
+.section_about-us {
+  background-color: #754FFE;
+  color: #f5f5f5;
+  padding: 10px 0;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.section_about-us p {
+  width: 90%;
+}
+
+#nav-link_contato {
+  background-color: #754FFE;
+  border-radius: 20px;
+  color: #f5f5f5;
+  transition: all 0.5s ease-in-out;
+}
+
+#nav-link_contato:hover {
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
+}
+
+/*# sourceMappingURL=style.css.map */
