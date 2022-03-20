@@ -1,16 +1,20 @@
-.section_products .products {
+.products {
     padding-top: 40px;
+    &__title{
+        padding-bottom: 10px;
+    }
 }
-.products h2 {
-    padding-bottom: 10px;
+.cardStyle {
+    &__image {
+        height: 340px;
+    }
 }
-.products .card img {
-    height: 340px;
-}
-.products .card-body .card-title {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.products .card-body .card-text {
-    padding-bottom: 0.5rem;
+.cardStyle__body {
+    &--title {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    &--text {
+        padding-bottom: 0.5rem;
+    }
 }

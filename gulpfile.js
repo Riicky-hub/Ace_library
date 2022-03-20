@@ -1,8 +1,5 @@
 /* Requires */
-const { series, parallel } = require('gulp');
 const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
-const reload = browserSync.reload();
 const htmlmin = require('gulp-htmlmin');
 const jsmin = require('gulp-uglify');
 const image = require('gulp-imagemin');
@@ -17,13 +14,12 @@ function tarefaHTML() {
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./dist'))
 }
-function tarefaCSS(callback) {
-    gulp.src('./vendor/bootstrap/css/bootstrap.css')
+function tarefaCSS() {
+    return gulp.src('./src/vendor/bootstrap/css/*.css')
         .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css'))
-    return callback();
 }
 function tarefaSASS() {
     return gulp.src('./src/scss/*.scss')
@@ -31,8 +27,8 @@ function tarefaSASS() {
         .pipe(gulp.dest('./dist/css'))
 }
 function tarefaJS() {
-    return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.js')
-        .pipe(concat('scripts.js'))
+    return gulp.src('./src/vendor/bootstrap/js/*.js')
+        .pipe(concat('libs.js'))
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/js'))
@@ -53,10 +49,11 @@ function tarefaIMG() {
         .pipe(gulp.dest('./dist/img'))
 }
 /* Comandos */
-exports.process = parallel(tarefaCSS, tarefaHTML, tarefaJS, tarefaSASS);
-exports.default = process;
+
 exports.htmls = tarefaHTML;
 exports.styles = tarefaCSS;
 exports.scripts = tarefaJS;
 exports.images = tarefaIMG;
 exports.sass = tarefaSASS;
+
+exports.default = parallel(tarefaHTML, tarefaCSS, tarefaSASS, tarefaJS);

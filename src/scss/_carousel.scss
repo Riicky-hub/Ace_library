@@ -1,9 +1,9 @@
-#carousel {
+.carouselStyle {
     box-shadow: $box-shadow;
-}
-#carousel img {
-    border-radius: 10px;
-    height: 320px;
-    box-shadow: $box-shadow;
-    width: 100%;
+    img {
+        border-radius: 10px;
+        height: 320px;
+        box-shadow: $box-shadow;
+        width: 100%;
+    }
 }

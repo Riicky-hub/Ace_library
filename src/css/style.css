@@ -1,53 +1,69 @@
-header {
-  padding: 5px 0;
-}
-
 input, textarea {
   margin-bottom: 0.5rem;
 }
 
-.section_products .products {
-  padding-top: 40px;
+header {
+  padding: 5px 0;
 }
 
-.products h2 {
+.nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: #754FFE;
+}
+
+#nav-link_contato {
+  background-color: #754FFE;
+  border-radius: 20px;
+  color: #f5f5f5;
+  transition: all 0.5s ease-in-out;
+}
+
+#nav-link_contato:hover {
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
+}
+
+.products {
+  padding-top: 40px;
+}
+.products__title {
   padding-bottom: 10px;
 }
 
-.products .card img {
+.cardStyle__image {
   height: 340px;
 }
 
-.products .card-body .card-title {
+.cardStyle__body--title {
   font-size: 1.3rem;
   font-weight: bold;
 }
-
-.products .card-body .card-text {
+.cardStyle__body--text {
   padding-bottom: 0.5rem;
 }
 
-.section_products form {
+.formStyle {
   padding: 60px 0 60px 0;
 }
 
-footer {
+.footerStyle {
   padding: 17px;
   background-color: #754FFE;
   color: #f5f5f5;
   text-align: center;
   border-top: 2px 2px 5px rgba(0, 0, 0, 0.624);
 }
-
-footer h5 {
+.footerStyle__text {
   margin: 0;
 }
 
-#carousel {
+.carouselStyle {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
 }
-
-#carousel img {
+.carouselStyle img {
   border-radius: 10px;
   height: 320px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
@@ -61,21 +77,8 @@ footer h5 {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
 }
-
-.section_about-us p {
+.section_about-us__text {
   width: 90%;
-}
-
-#nav-link_contato {
-  background-color: #754FFE;
-  border-radius: 20px;
-  color: #f5f5f5;
-  transition: all 0.5s ease-in-out;
-}
-
-#nav-link_contato:hover {
-  color: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.624);
 }
 
 /*# sourceMappingURL=style.css.map */

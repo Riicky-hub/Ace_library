@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Ace Livraria - Home</title>
 </head>
@@ -32,12 +32,13 @@
             <div class="row">
                 <div class="col-md-7 col-sm-12">
                     <h1><i class="fa-solid fa-book-open-reader"></i> Nossa Livraria:</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quisquam, numquam omnis quasi, magni illum facilis voluptates dicta animi non, repellendus veniam quo quis a aut! Beatae debitis quod laboriosam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis animi ipsam quibusdam sed. Dolorem,Ratione veritatis animi ipsam quibusdam sed. Dolorem quisquam deserunt hic enim, quam, itaque nihil nobis consequuntur autem libero eius magni rem veritatis.</p>
+                    <p class="section_about-us__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quisquam, numquam omnis quasi, magni illum facilis voluptates dicta animi non, repellendus veniam quo quis a aut! Beatae debitis quod laboriosam!</p>
+                    <p class="section_about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis animi ipsam quibusdam sed. Dolorem,Ratione veritatis animi ipsam quibusdam sed. Dolorem quisquam deserunt hic enim, quam, itaque nihil nobis consequuntur autem libero eius magni rem veritatis.</p>
                     <button class="btn btn-success btn-lg">Contatar</button>
                 </div>
+    <!-- Carousel -->
                 <div class="col-md-5 col-sm-12">
-                    <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                    <div class="carousel slide carouselStyle" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class="img-fluid" src="../img/slide1.jpg" alt="Primeiro slide">
@@ -52,11 +53,11 @@
                                 <img class="img-fluid" src="../img/slide4.jpg" alt="Quarto slide">
                             </div>
                         </div>
-                        <a href="#carousel" class="carousel-control-prev" data-bs-slide="prev" role="button">
+                        <a href=".carouselStyle" class="carousel-control-prev" data-bs-slide="prev" role="button">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Anterior</span>
                         </a>
-                        <a href="#carousel" class="carousel-control-next" data-bs-slide="next" role="button">
+                        <a href=".carouselStyle" class="carousel-control-next" data-bs-slide="next" role="button">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Próximo</span>
                         </a>
@@ -70,40 +71,41 @@
     <section class="section_products">
         <div class="container products">
             <div class="row">
-                <h2><i class="fa-solid fa-book"></i> Produtos:</h2>
+                <h2 class="products__title"><i class="fa-solid fa-book"></i> Produtos:</h2>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="../img/a_clockwork_orange.png" alt="Livro Clockwork Orange" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title">Clockwork Orange</div>
-                            <div class="card-text"><strong>Sinopse: </strong>O protagonista e anti-herói Alex, amante da música clássica (principalmente Ludwig van Beethoven) e líder de uma gangue de delinquentes (seus amigos são chamados de "drugues"), cai nas mãos da polícia.</div>
+                    <div class="card cardStyle">
+                        <img class="cardStyle__image" src="../img/a_clockwork_orange.png" alt="Livro Clockwork Orange" class="card-img-top">
+                        <div class="card-body cardStyle__body">
+                            <div class="card-title cardStyle__body--title">Clockwork Orange</div>
+                            <div class="card-text cardStyle__body--text"><strong>Sinopse: </strong>O protagonista e anti-herói Alex, amante da música clássica (principalmente Ludwig van Beethoven) e líder de uma gangue de delinquentes (seus amigos são chamados de "drugues"), cai nas mãos da polícia.</div>
                             <a href="#" class="btn btn-success">Ver produto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="../img/wuthering_heights.jpg" alt="Livro Wuthering Heights" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title">Wuthering Heights</div>
-                            <div class="card-text"><strong>Sinopse: </strong>O locatário da propriedade de Granja da Cruz dos Tordos, localizada em Gimmerton, Yorkshire, fica adoentado. Durante este período, a governanta Ellen Dean, chamada de Nelly, conta-lhe a história que presenciou da propriedade do Morro dos Ventos Uivantes.</div>
+                    <div class="card cardStyle">
+                        <img class="cardStyle__image" src="../img/wuthering_heights.jpg" alt="Livro Wuthering Heights" class="card-img-top">
+                        <div class="card-body cardStyle__body">
+                            <div class="card-title cardStyle__body--title">Wuthering Heights</div>
+                            <div class="card-text cardStyle__body--text"><strong>Sinopse: </strong>O locatário da propriedade de Granja da Cruz dos Tordos, localizada em Gimmerton, Yorkshire, fica adoentado. Durante este período, a governanta Ellen Dean, chamada de Nelly, conta-lhe a história que presenciou da propriedade do Morro dos Ventos Uivantes.</div>
                             <a href="#" class="btn btn-success">Ver produto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="../img/crime_and_punishment.jpg" alt="Livro Crime and Punishment" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title">Crime and Punishment</div>
-                            <div class="card-text"><strong>Sinopse: </strong>É o segundo romance de Dostoiéviski, escrito após seu exílio de dez anos na Sibéria. Crime e Castigo é considerado o primeiro grande romance do seu período de escrita "maduro".</div>
+                    <div class="card cardStyle">
+                        <img class="cardStyle__image" src="../img/crime_and_punishment.jpg" alt="Livro Crime and Punishment" class="card-img-top">
+                        <div class="card-body cardStyle__body">
+                            <div class="card-title cardStyle__body--title">Crime and Punishment</div>
+                            <div class="card-text cardStyle__body--text"><strong>Sinopse: </strong>É o segundo romance de Dostoiéviski, escrito após seu exílio de dez anos na Sibéria. Crime e Castigo é considerado o primeiro grande romance do seu período de escrita "maduro".</div>
                             <a href="#" class="btn btn-success">Ver produto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <form>
+    <!-- Form -->
+        <form class="formStyle">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-12">
@@ -187,11 +189,11 @@
     </div>
     <!-- Modal - Cadastro - END -->
     
-    <footer>
-        <h5>&copy;Riicky-hub</h5>
+    <footer class="footerStyle">
+        <h5 class="footerStyle__text">&copy;Riicky-hub</h5>
     </footer>
 
     <script src="https://kit.fontawesome.com/efde86963f.js" crossorigin="anonymous"></script>
-    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
