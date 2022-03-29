@@ -1,0 +1,21 @@
+.gallery {
+    border-bottom: $border;
+    margin: 15px 0;
+}
+
+
+.container__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    &--img {
+        height: 220px;
+        width: auto;
+        margin: 25px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            opacity: 80%;
+        }
+    }
+}
